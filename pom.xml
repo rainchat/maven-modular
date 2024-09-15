@@ -10,7 +10,6 @@
   <packaging>pom</packaging>
   <name>RCore</name>
   <modules>
-    <module>test1</module>
     <module>module2</module>
     <module>commands</module>
   </modules>
