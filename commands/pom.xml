@@ -1,32 +1,35 @@
 <?xml version="1.0"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>commands</artifactId>
-    <groupId>ru.rainchat</groupId>
-    <version>1.0</version>
-    <name>commands</name>
-    <url>http://maven.apache.org</url>
-
     <parent>
         <groupId>com.rainchat.rlib</groupId>
         <artifactId>RCore</artifactId>
         <version>1.1</version>
     </parent>
 
+    <groupId>io.jitpack</groupId>
+    <artifactId>commands</artifactId>
+    <version>2.0-SNAPSHOT</version>
+    <name>module2</name>
+    <url>http://maven.apache.org</url>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jackson.ver>2.9.6</jackson.ver>
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-kotlin</artifactId>
+            <version>2.9.6</version>
+        </dependency>
     </dependencies>
 </project>
